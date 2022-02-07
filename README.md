@@ -22,3 +22,6 @@ https://www.notion.so/invite/10d8af60fa05d6694101c6a2498a06b187994075
 smileyr99
 정훈희 — 오늘 오후 5:48
 회원정보 - 이메일, 이름, 비밀번호
+
+
+https://www.erdcloud.com/d/9ugNkywfQgqqR9ztm
