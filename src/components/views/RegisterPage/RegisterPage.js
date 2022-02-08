@@ -10,17 +10,25 @@ function Register(props) {
   const [name, setName] = useState("")
   const [confirmPassword, setConfirmPassword] = useState("")
   
-  const onEmailHandler = e => { setEmail(e.target.value); }
-  const onNameHandler = e => { setName(e.target.value); }
-  const onPasswordHandler = e => { setPassword(e.target.value); }
-  const onConfirmPasswordHandler = e => { setConfirmPassword(e.target.value); }
+  const onEmailHandler = (event) => {
+     setEmail(event.target.value); 
+  }
+  const onNameHandler = (event) => {
+     setName(event.target.value); 
+  }
+  const onPasswordHandler = (event) => {
+     setPassword(event.target.value); 
+  }
+  const onConfirmPasswordHandler = (event) => {
+     setConfirmPassword(event.target.value);
+  }
   
-  const onSubmitHandler = e => {
-	  e.preventDefault();
+  const onSubmitHandler = (event) => {
+	  event.preventDefault();
 	  if(password !== confirmPassword){
 		  return alert('비밀번호와 비밀번호 확인은 같아야 합니다.')
 	  }
-	  	  let body = {
+	  let body = {
 		  email: email,
 		  password: password,
 		  name: name
@@ -56,8 +64,8 @@ function Register(props) {
 		  <input type="password" value={confirmPassword} onChange={onConfirmPasswordHandler} ></input>
 		  
 		  <br/>
-		  <button>
-		  	회원가입
+		  <button type="submit">
+        Register
 		  </button>
 	  </form>
 		  
